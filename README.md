@@ -2,7 +2,11 @@
 
 Steps:
 
-* Generate CRUD for recipes
+* Create a home route
+
+* Add bootstrap framework to the app
+
+* Generate CRUD for chef recipes
 
 * TDD confidence
 
