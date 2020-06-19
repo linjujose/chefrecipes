@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps:
 
-Things you may want to cover:
+* Generate CRUD for recipes
 
-* Ruby version
+* TDD confidence
 
-* System dependencies
+* Re-factor the code for clean fragrance
 
-* Configuration
+* Rails 5.0.7.2
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Ruby 2.7.1
 
 * ...
