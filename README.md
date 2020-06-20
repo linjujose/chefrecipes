@@ -6,7 +6,7 @@ Steps:
 
 * Add bootstrap framework to the app
 
-* Generate CRUD for chef recipes
+* Create Navbar for chef recipes
 
 * TDD confidence
 
