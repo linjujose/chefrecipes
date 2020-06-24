@@ -19,6 +19,7 @@ $navbar-default-bg: #091326;
     text-transform: capitalize;
     letter-spacing: -1px;
     font-weight: bold;
+    list-style-image: asset-url('logo_image.png');
 }
 
 #logo:hover {
