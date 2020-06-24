@@ -2,18 +2,26 @@
 
 Steps:
 
-* Create a home route
+* ...
 
-* Add bootstrap framework to the app
+* TDD/ test first approach
 
-* Create Navbar for chef recipes
-
-* TDD confidence
-
-* Re-factor the code for clean fragrance
+* Code refactoring and cleanup
 
 * Rails 5.0.7.2
 
 * Ruby 2.7.1
+
+* ...
+
+* Create a home route
+
+* Add bootstrap framework to the app
+
+* Create Navbar and footer for home page
+
+* Chef - Recipes data model
+
+* 
 
 * ...
