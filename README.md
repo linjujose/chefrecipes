@@ -18,10 +18,10 @@ Steps:
 
 * Add bootstrap framework to the app
 
-* Create Navbar and footer for home page
+* Create Navbar for the home page
+
+* Create footer and its CSS classes
 
 * Chef - Recipes data model
-
-* 
 
 * ...
