@@ -22,6 +22,13 @@ Steps:
 
 * Create footer and its CSS classes
 
-* Chef - Recipes data model
+* DB layer
+
+* 
+
+* Chef-Recipes data model
+
+https://xkcd.com/atom.xml
+https://www.youtube.com/watch?v=iearOYe_PZ0
 
 * ...
