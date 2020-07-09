@@ -43,6 +43,8 @@ group :development, :test do
   gem 'sqlite3', '~> 1.3.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  # To use assert_template
+  gem 'rails-controller-testing'
 end
 
 group :development do

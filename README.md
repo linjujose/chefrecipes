@@ -4,10 +4,6 @@ Steps:
 
 * ...
 
-* TDD/ test first approach
-
-* Code refactoring and cleanup
-
 * Rails 5.0.7.2
 
 * Ruby 2.7.1
@@ -22,13 +18,26 @@ Steps:
 
 * Create footer and its CSS classes
 
-* DB layer
+* Create models for chef and recipe
 
-* 
+* Add validations using TDD
 
-* Chef-Recipes data model
+* Add chef_id(foreign key) to recipes
 
-https://xkcd.com/atom.xml
-https://www.youtube.com/watch?v=iearOYe_PZ0
+* Chef-Recipes 1:many association
+
+* Flesh out standard endpoints for recipes by adding resource in Routes:
+
+Prefix         VERB     URI Pattern         Controller#Action
+------         ----     -----------         -----------------
+recipes        GET      /recipes            recipes#index
+new_recipe     GET      /recipes/new        recipes#new         #display a form
+               POST     /recipes            recipes#create      #submit info from the form
+edit_recipes   GET      /recipes/:id/edit   recipes#edit        #display edit form
+               PATCH    /recipes/:id        recipes#update      #submite edited form
+recipe         GET      /recipes/:id        recipes#show        #show one requested recipe
+               DELETE   /recipes/:id        recipes#destroy     #delete specified recipe
+
+* Start with index page
 
 * ...
