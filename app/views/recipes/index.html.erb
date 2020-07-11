@@ -1,4 +1,4 @@
-<h1 align="center"> Listing all recipes </h1>
+<h1 align="center"> List of all recipes </h1>
 <hr />
 <% @recipes.each do |recipe| %>
     <div class="row">
@@ -7,9 +7,9 @@
             </section>
         </div>
         <div class="col-md-8 well">
-            <h4><%= recipe.name%> </h4>
+            <h4><%= link_to recipe.name.slice(0,1).capitalize + recipe.name.slice(1..-1), recipe_path(recipe)%> </h4>
             <p>
-                <%= truncate(recipe.description, length: 50)%> 
+                <%= truncate(recipe.description, length: 100)%> 
             </p>
             <p>
                 <span class="quiet">
