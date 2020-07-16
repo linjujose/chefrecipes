@@ -1,13 +1,13 @@
-<h1 align="center"> List of all recipes </h1>
-<hr />
+<%= render 'shared/page_title', title: 'List of all recipes'%>
 <% @recipes.each do |recipe| %>
     <div class="row">
         <div class="col-md-2">
-            <section class="center">
+            <section class="chef_info center">
+                <%= gravatar_for(recipe.chef, size: 120)%>
             </section>
         </div>
         <div class="col-md-8 well">
-            <h4><%= link_to recipe.name.slice(0,1).capitalize + recipe.name.slice(1..-1), recipe_path(recipe)%> </h4>
+            <h4><%= link_to recipe.name.capitalize, recipe_path(recipe)%> </h4>
             <p>
                 <%= truncate(recipe.description, length: 100)%> 
             </p>

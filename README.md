@@ -30,14 +30,16 @@ Steps:
 
 Prefix         VERB     URI Pattern         Controller#Action
 ------         ----     -----------         -----------------
-recipes        GET      /recipes            recipes#index
-new_recipe     GET      /recipes/new        recipes#new         #display a form
-               POST     /recipes            recipes#create      #submit info from the form
-edit_recipes   GET      /recipes/:id/edit   recipes#edit        #display edit form
-               PATCH    /recipes/:id        recipes#update      #submite edited form
-recipe         GET      /recipes/:id        recipes#show        #show one requested recipe
-               DELETE   /recipes/:id        recipes#destroy     #delete specified recipe
+*  recipes        GET      /recipes            recipes#index
+*  new_recipe     GET      /recipes/new        recipes#new         #display a form
+*                 POST     /recipes            recipes#create      #submit info from the form
+*  edit_recipes   GET      /recipes/:id/edit   recipes#edit        #display edit form
+*                 PATCH    /recipes/:id        recipes#update      #submite edited form
+*  recipe         GET      /recipes/:id        recipes#show        #show one requested recipe
+*                 DELETE   /recipes/:id        recipes#destroy     #delete specified recipe
 
-* Start with index page
+* Add index and show pages
+
+* Added gravatar support to chefs
 
 * ...
