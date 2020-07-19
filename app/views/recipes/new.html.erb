@@ -1,0 +1,16 @@
+<%= render 'shared/page_title', title: "Create a new recipe" %>
+
+<div class="row">
+    <div class="col-md-12">
+        <%= form_for(@recipe, :html => {class: "form-horizontal", role: "form"}) do | f | %>
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    <%= f.label :name %>
+                </div>
+                <div class="col-md-8">
+                    <%= f.text_field :name, class: "form-control", placeholder: "Name of recipe", autofocus: true %>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
