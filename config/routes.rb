@@ -3,11 +3,5 @@ Rails.application.routes.draw do
   root "pages#home"
   get 'pages/home', to: 'pages#home'
 
-  get '/recipes', to: 'recipes#index'
-
-  #since id is dynamic, new could be confused as an id. So, hierarchicaclly put it before show controller
-  get '/recipes/new', to: 'recipes#new', as: 'new_recipe'
-  
-  get '/recipes/:id', to: 'recipes#show', as: 'recipe'
-
+  resources :recipes
 end

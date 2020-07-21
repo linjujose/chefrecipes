@@ -36,11 +36,11 @@ $navbar-default-bg: #091326;
 }
 
 .jumbotron h2 {
-
+    font-weight: normal;
 }
 
 .btn-xlarge {
-    background-color: #091326;
+    background-color: #004183;
 }
 
 .btn-xlarge:hover {
@@ -93,4 +93,12 @@ footer p {
 
 .chef_info {
     margin-top: 10px;
+}
+
+.well a {
+    color: #004183;
+}
+
+.colormatch a {
+    color: #004183;
 }
