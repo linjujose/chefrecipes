@@ -4,7 +4,7 @@ class RecipesController < ApplicationController
     end
 
     def show
-        @recipe = Recipe.find(params[:id])
+        recipe_by_id
     end
 
     def new
@@ -13,9 +13,9 @@ class RecipesController < ApplicationController
 
     def create
         @recipe = Recipe.new(recipe_params)
-        
+
         #tentative - change after completing login part
-        @recipe.chef = Chef.first
+        @recipe.chef = Chef.last
 
         if @recipe.save
             flash[:success] = "Recipe was created successfully"
@@ -23,6 +23,24 @@ class RecipesController < ApplicationController
         else
             render 'new'
         end
+    end
+
+    def edit
+        recipe_by_id
+    end
+
+    def update
+        recipe_by_id
+        if @recipe.update(recipe_params)
+            flash[:success] = "Recipe was updated successfully"
+            redirect_to recipe_path(@recipe)
+        else
+            render 'edit'
+        end
+    end
+
+    def recipe_by_id
+        @recipe = Recipe.find(params[:id])
     end
 
 private
