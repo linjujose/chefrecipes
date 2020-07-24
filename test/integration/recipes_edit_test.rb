@@ -32,5 +32,4 @@ class RecipesEditTest < ActionDispatch::IntegrationTest
     assert_match updated_name, @recipe.name
     assert_match updated_description, @recipe.description
   end
-  
 end
