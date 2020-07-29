@@ -38,8 +38,12 @@ Prefix         VERB     URI Pattern         Controller#Action
 *  recipe         GET      /recipes/:id        recipes#show        #show one requested recipe
 *                 DELETE   /recipes/:id        recipes#destroy     #delete specified recipe
 
-* Add index and show pages
+* Gravatar support to chefs
 
-* Added gravatar support to chefs
+* Forms to create and edit a recipe
+
+* Implement the delete and list recipes routes
+
+* Add password digest to chefs
 
 * ...
