@@ -2,5 +2,8 @@ require 'test_helper'
 
 class ChefsSignupTest < ActionDispatch::IntegrationTest
   
-  #future tests for signup page view
+  test "should get signup path" do
+    get signup_path
+    assert_response :success
+  end
 end
