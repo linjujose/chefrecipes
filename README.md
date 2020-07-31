@@ -46,4 +46,8 @@ Prefix         VERB     URI Pattern         Controller#Action
 
 * Add password digest to chefs
 
+* Implement Chef signup
+
+* Chef profile show page
+
 * ...
