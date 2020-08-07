@@ -50,4 +50,14 @@ Prefix         VERB     URI Pattern         Controller#Action
 
 * Chef profile show page
 
+* Edit Chef profile
+
+* Pagination of listings
+
+* Delete Chef cascaded with their recipes
+
+* Authentication/Login session
+
+* 
+
 * ...
