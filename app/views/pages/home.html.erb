@@ -1,9 +1,16 @@
 <div class="jumbotron center">
     <h1>Welcome to Chef Recipes</h1>
     <h2>The best app to explore recipes</h2>
+    <!--
     <p> 
         <%= link_to "Sign up/Log in", signup_path, class: "btn btn-lg btn-primary btn-xlarge" %> 
-    </p> <!-- "Sign up/Log in" -->
+    </p> -->
+    <form class="navbar-form navbar">
+        <div class="form-group">
+          <input type="text" size="50" class="form-control" placeholder="Find recipes">
+        </div>
+        <%= link_to "Search", recipes_path, class: "btn btn-primary btn-xlarge" %>
+    </form> 
 </div>
 <!-- Example row of columns from Bootstrap's Justified Nav Custom Component -->
 <div class="row">
