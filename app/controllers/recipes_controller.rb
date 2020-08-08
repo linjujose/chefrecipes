@@ -16,8 +16,7 @@ class RecipesController < ApplicationController
     def create
         @recipe = Recipe.new(recipe_params)
 
-        #tentative - change after completing login part
-        @recipe.chef = Chef.last
+        @recipe.chef = current_chef
 
         if @recipe.save
             flash[:success] = "Recipe was created successfully"
