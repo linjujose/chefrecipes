@@ -58,6 +58,6 @@ Prefix         VERB     URI Pattern         Controller#Action
 
 * Authentication/Login session
 
-* 
+* Admin role page and tests
 
 * ...

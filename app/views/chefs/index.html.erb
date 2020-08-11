@@ -19,7 +19,7 @@
                         </small>
                     </li>
                     <li>
-                        <% if logged_in? && chef.chefname == "GOAT" %>
+                        <% if logged_in? && current_chef.admin? && !chef.admin?%>
                             <small> 
                                 <%= link_to "Delete this chef", chef_path(chef), method: :delete,
                                         data: {confirm: "Are you sure you want to delete this Chef and all associated recipes?"}
