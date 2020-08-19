@@ -60,8 +60,8 @@ Prefix         VERB     URI Pattern         Controller#Action
 
 * Admin role page and tests
 
-* Ingredients model
+* Ingredient model and m:m associations
 
-* Comments tables and their associations
+* Comments table and their associations
 
 * ...
