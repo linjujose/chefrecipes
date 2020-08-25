@@ -9,4 +9,5 @@ class Chef < ApplicationRecord
     has_many :recipes, dependent: :destroy
     has_secure_password # enforces password won't be nil at signup
     validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
+    has_many :comments, dependent: :destroy
 end
