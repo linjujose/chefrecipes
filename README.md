@@ -62,6 +62,10 @@ Prefix         VERB     URI Pattern         Controller#Action
 
 * Ingredient model and m:m associations
 
-* Comments table and their associations
+* Comments table and their associations with recipe and chef
+
+* Add Comments to show recipe page
+
+* Add Ingredients to recipe views
 
 * ...
