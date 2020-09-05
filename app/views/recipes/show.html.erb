@@ -38,3 +38,25 @@
         <%= link_to "Return to recipes listing", recipes_path, class: "btn btn-xs btn-primary"%>
     </div>
 </div>
+
+<% if logged_in? %>
+    <!-- CREATE NEW COMMENTS 
+    -->
+<% end %>
+
+<% if @recipe.comments != 0 %>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3> Previous Comments: </h3>
+            <div id="messages">
+                <%= render partial: 'comments/comments', object: @comments %>
+            </div>
+        </div>
+    </div>
+<% else %>
+    <div class="row">
+        <div class= "col-md-8 col-md-offset-2">
+            <h3> No Comments </h3>
+        </div>
+    </div>
+<% end %>
