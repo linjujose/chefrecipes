@@ -40,8 +40,23 @@
 </div>
 
 <% if logged_in? %>
-    <!-- CREATE NEW COMMENTS 
-    -->
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3> Comments: </h3>
+            <hr />
+            <%= form_for([@recipe, @comment], :html => {class: "form-horizontal", role: "form"}) do | f | %>
+                <div class="form-group">
+                    <div class="col-md-8">
+                        <%= f.text_area :description, rows: 3, class: "form-control", placeholder: "Enter new comment here" %>
+                    </div>
+                    <div class="col-md-2">
+                        <%= f.submit "Submit Comment", class: "btn btn-primary btn-xlarge" %>
+                    </div>
+                </div>
+            <% end %>
+            <hr />
+        </div>
+    </div>
 <% end %>
 
 <% if @recipe.comments != 0 %>
