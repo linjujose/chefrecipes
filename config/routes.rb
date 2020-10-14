@@ -3,6 +3,12 @@ Rails.application.routes.draw do
   root "pages#home"
   get 'pages/home', to: 'pages#home'
 
+  namespace :api do
+    namespace :v1 do
+      resources :recipes, only: [:show, :create, :index, :destroy]
+    end
+  end
+
   #nested route for new comments in every recipe
   resources :recipes do
     resources :comments, only: [:create]
