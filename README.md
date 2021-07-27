@@ -1,14 +1,8 @@
 # README
 
-Steps:
-
-* ...
-
 * Rails 5.0.7.2
 
 * Ruby 2.7.1
-
-* ...
 
 * Create a home route
 
@@ -27,9 +21,9 @@ Steps:
 * Chef-Recipes 1:many association
 
 * Flesh out standard endpoints for recipes by adding resource in Routes:
-
-Prefix         VERB     URI Pattern         Controller#Action
-------         ----     -----------         -----------------
+```
+Prefix     |     VERB  |  URI Pattern    |    Controller#Action 
+------           ----     -----------         -----------------
 *  recipes        GET      /recipes            recipes#index
 *  new_recipe     GET      /recipes/new        recipes#new         #display a form
 *                 POST     /recipes            recipes#create      #submit info from the form
@@ -37,7 +31,7 @@ Prefix         VERB     URI Pattern         Controller#Action
 *                 PATCH    /recipes/:id        recipes#update      #submite edited form
 *  recipe         GET      /recipes/:id        recipes#show        #show one requested recipe
 *                 DELETE   /recipes/:id        recipes#destroy     #delete specified recipe
-
+```
 * Gravatar support to chefs
 
 * Forms to create and edit a recipe
